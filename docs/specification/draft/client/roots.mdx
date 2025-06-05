@@ -109,7 +109,8 @@ A root definition includes:
 
 - `uri`: Unique identifier for the root. This **MUST** be a `file://` URI in the current
   specification.
-- `name`: Optional human-readable name for display purposes.
+- `name`: Optional human-readable name of the root.
+- `displayName`: Optional human-readable name of the root used for display purposes.
 
 Example roots for different use cases:
 
@@ -118,7 +119,8 @@ Example roots for different use cases:
 ```json
 {
   "uri": "file:///home/user/projects/myproject",
-  "name": "My Project"
+  "name": "myproject",
+  "displayName": "My Project"
 }
 ```
 
@@ -128,11 +130,13 @@ Example roots for different use cases:
 [
   {
     "uri": "file:///home/user/repos/frontend",
-    "name": "Frontend Repository"
+    "name": "frontend",
+    "displayName": "Front-end Repository"
   },
   {
     "uri": "file:///home/user/repos/backend",
-    "name": "Backend Repository"
+    "name": "backend",
+    "displayName": "Back-end Repository",
   }
 ]
 ```
