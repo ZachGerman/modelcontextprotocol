@@ -66,7 +66,7 @@ To retrieve roots, servers send a `roots/list` request:
     "roots": [
       {
         "uri": "file:///home/user/projects/myproject",
-        "name": "My Project"
+        "displayName": "My Project"
       }
     ]
   }
@@ -109,7 +109,7 @@ A root definition includes:
 
 - `uri`: Unique identifier for the root. This **MUST** be a `file://` URI in the current
   specification.
-- `name`: Optional human-readable name for display purposes.
+- `displayName`: Optional human-readable name for display purposes.
 
 Example roots for different use cases:
 
@@ -118,7 +118,7 @@ Example roots for different use cases:
 ```json
 {
   "uri": "file:///home/user/projects/myproject",
-  "name": "My Project"
+  "displayName": "My Project"
 }
 ```
 
@@ -128,11 +128,11 @@ Example roots for different use cases:
 [
   {
     "uri": "file:///home/user/repos/frontend",
-    "name": "Frontend Repository"
+    "displayName": "Front-end Repository"
   },
   {
     "uri": "file:///home/user/repos/backend",
-    "name": "Backend Repository"
+    "displayName": "Back-end Repository"
   }
 ]
 ```
